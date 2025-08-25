@@ -20,6 +20,7 @@
   padding: 1rem;
   order: 0;
   display: none;
+    background-color: var(--bg-color);
 }
 
 .aside.open {
@@ -39,7 +40,7 @@
     left: 0;
     height: 10vh;
     width: 100%;
-    background-color: #e0e0e0;
+    background-color: var(--footer-bg);
     z-index: 1000;
 
     display: flex;
@@ -57,7 +58,6 @@
 
   .aside {
     width: 280px;
-    display: block;
   }
 
   .products {

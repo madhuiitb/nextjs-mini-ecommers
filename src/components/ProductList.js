@@ -6,7 +6,7 @@ import { useFilters } from "@/context/FiltersContext";
 
 const URL = "https://fakestoreapi.com/Products/";
 
-const ProductList = ({ products, setProducts, selectedCategories,cartItemsCount, setCartItemsCount }) => {
+const ProductList = ({ products, setProducts, selectedCategories }) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const { searchValue, sortOption } =  useFilters();
@@ -38,7 +38,10 @@ const ProductList = ({ products, setProducts, selectedCategories,cartItemsCount,
     };
 
 
-    const filteredProducts = products.filter((product) => (product.title.toLowerCase().includes(searchValue.toLowerCase()))).sort((a, b) => {
+    const filteredProducts = products.filter((product) => (
+        product.title.toLowerCase()
+            .includes(searchValue.toLowerCase())))
+        .sort((a, b) => {
         if (sortOption === 'priceLow') {
             return a.price - b.price;
         } else if (sortOption === 'priceHigh') {

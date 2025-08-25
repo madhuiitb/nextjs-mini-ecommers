@@ -5,7 +5,6 @@ const FilterSideBar = ({ categoryProducts, onClose, handleFilterChange }) => {
     const capitalizeFirstLetter = (str)=> {
         return str.charAt(0).toUpperCase() + str.slice(1);
     }
-    console.log("FilterSideBar", categoryProducts);
 
     return(
         <div className={styles.asideContainer}>

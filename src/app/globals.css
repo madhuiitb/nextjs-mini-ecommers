@@ -4,12 +4,58 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+    /* Backgrounds */
+    --bg-color: #ffffff;
+    --header-bg: #f9fafb;
+    --footer-bg: #f1f5f9;
+    --card-bg: #f8fafc;
+
+    /* Text */
+    --text-color: #111827;
+    --text-muted: #6b7280;
+    --label-color: #374151;
+    --title-color: #0f172a;
+
+    /* Buttons */
+    --btn-bg: #2563eb;
+    --btn-hover: #1d4ed8;
+    --btn-text: #ffffff;
+
+    /* Accent */
+    --accent-color: #f59e0b;
+    --accent-hover: #d97706;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    /* Backgrounds */
+    --bg-color: #111827;
+    --header-bg: #1f2937;
+    --footer-bg: #1e293b;
+    --card-bg: #1f2937;
+
+    /* Text */
+    --text-color: #f9fafb;
+    --text-muted: #9ca3af;
+    --label-color: #d1d5db;
+    --title-color: #f3f4f6;
+
+    /* Buttons */
+    --btn-bg: #3b82f6;
+    --btn-hover: #2563eb;
+    --btn-text: #ffffff;
+
+    /* Accent */
+    --accent-color: #fbbf24;
+    --accent-hover: #f59e0b;
+}
+
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 * {
@@ -27,6 +73,7 @@ a {
   top:10vh;
   position: relative;
 }
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

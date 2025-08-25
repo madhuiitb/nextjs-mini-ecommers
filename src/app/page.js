@@ -9,7 +9,6 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
-  const [cartItemsCount, setCartItemsCount] = useState(0);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const { isFiltersBarOpen, setIsFiltersBarOpen } = useFilters();
 
@@ -46,8 +45,6 @@ export default function Home() {
             products={products}
             setProducts={setProducts}
             selectedCategories={selectedCategories}
-            cartItemsCount={cartItemsCount}
-            setCartItemsCount={setCartItemsCount}
           />
         </div>
       </main>
