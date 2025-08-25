@@ -3,7 +3,7 @@ import ProductDetails from "@/components/ProductDetails";
 export default async function ProductPage({ params }) {
     const { id } = await params;
     try {
-        const res = await fetch(`https://fakestoreapi.com/productss/${id}`, {
+        const res = await fetch(`https://fakestoreapi.com/products/${id}`, {
             cache: "no-store",
         });
 
