@@ -1,6 +1,6 @@
-import styles from "./page.module.scss";
+import styles from "./page.module.css";
 
-const Loader=() => {
+const Loading=() => {
     return <div className={styles.skeleton}>
         <div className={styles.image}></div>
         <div className={styles.info}>
@@ -11,4 +11,4 @@ const Loader=() => {
     </div>
 }
 
-export default Loader;
+export default Loading;

@@ -1,18 +1,20 @@
-import ProductDetails from "@/components/ProductDetails"; // client component
+import ProductDetails from "@/components/ProductDetails";
 
 export default async function ProductPage({ params }) {
     const { id } = await params;
     try {
-        const res = await fetch(`https://fakestoreapi.com/products/${id}`, {
+        const res = await fetch(`https://fakestoreapi.com/productss/${id}`, {
             cache: "no-store",
         });
 
-        if (!res.ok) throw new Error("Failed to fetch");
+        if (!res.ok) {
+            throw new Error("Failed to fetch");
+        }
 
         const product = await res.json();
 
         return <ProductDetails product={product} />;
     } catch (error) {
-        return <div>Something went wrong.</div>;
+        throw new Error("Failed to load product");
     }
 }
