@@ -50,7 +50,7 @@
     margin-top: 12px;
     padding: 8px 16px;
     background: #b91c1c;
-    color: white;
+    color: var(--accent-color);
     border: none;
     border-radius: 6px;
     cursor: pointer;

@@ -5,7 +5,7 @@
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: var(--bg-color);
     min-height: auto;
     overflow: visible;
 }
@@ -18,14 +18,15 @@
     background: none;
     border: none;
     font-size: 1.5rem;
+    border-radius: 0.2rem;
     padding: 0.5rem;
-    color: #333;
+    color: var(--title-color);
     z-index: 10;
     transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .closeButton:hover {
-    color: red;
+    color: var(--btn-hover);
     transform: scale(1.2);
 }
 
@@ -61,6 +62,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 120px;
+    color:var(--label-color);
 }
 
 /* Tablet (min-width: 768px) */

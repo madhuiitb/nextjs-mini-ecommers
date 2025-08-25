@@ -5,7 +5,8 @@ import Sort from "./Sort";
 import styles from "./Header.module.css";
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faBox, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import ThemeIcon from "@/components/ThemeIcon";
 
 const Header = () => {
     const navLinks = [
@@ -42,6 +43,7 @@ const Header = () => {
                 <Sort />
                 <FilterButton />
                 <Cart />
+                <ThemeIcon />
             </div>
         </header>
     )

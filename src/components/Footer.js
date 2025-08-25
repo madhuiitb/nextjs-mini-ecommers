@@ -3,7 +3,6 @@ import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHome, faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 
-
 const Footer = () => {
     return (
         <nav className={styles.nav}>

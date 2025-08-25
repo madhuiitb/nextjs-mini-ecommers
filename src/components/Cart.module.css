@@ -17,19 +17,19 @@
   padding: 0 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #fff;
+  background-color:var(--btn-bg);
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .cartButton:hover {
-  background-color: #f0f0f0;
+  background-color: var(--btn-hover);
 }
 
 .itemsLabel {
   font-size: 2rem;
   font-weight: bold;
-  color: #000;
+  color: var(--btn-text);
   margin-right: 4px;
 }
 

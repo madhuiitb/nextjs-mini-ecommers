@@ -3,6 +3,7 @@
     gap:16px;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     align-items: stretch;
+    background-color: var(--bg-color);
 }
 .card {
     border: 1px solid #ddd;
@@ -11,6 +12,7 @@
     height: 100%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: box-shadow 0.2s ease-in-out;
+    color: var(--label-color);
 }
 
 .card:hover{
@@ -53,7 +55,7 @@
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #0070f3;
-    color: white;
+    color: var(--accent-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -61,7 +63,7 @@
 }
 
 .retryButton:hover {
-    background-color: #005bb5;
+    background-color: var(--accent-hover);
 }
 
 .skeletonCard {
@@ -69,13 +71,13 @@
     border-radius: 8px;
     padding: 16px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: var(--label-color);
 }
 
 .skeletonImage {
     width: 200px;
     height: 200px;
-    background-color: #e0e0e0;
+    background-color: var(--text-muted);
     border-radius: 4px;
     margin-bottom: 10px;
     animation: pulse 1.5s ease-in-out infinite;
@@ -84,7 +86,7 @@
 .skeletonTitle {
     width: 80%;
     height: 20px;
-    background-color: #e0e0e0;
+    background-color: var(--text-muted);
     border-radius: 4px;
     margin: 10px auto;
     animation: pulse 1.5s ease-in-out infinite;
@@ -93,7 +95,7 @@
 .skeletonPrice {
     width: 50%;
     height: 16px;
-    background-color: #e0e0e0;
+    background-color: var(--text-muted);
     border-radius: 4px;
     margin: 8px auto;
     animation: pulse 1.5s ease-in-out infinite;
@@ -102,7 +104,7 @@
 .skeletonCategory {
     width: 60%;
     height: 16px;
-    background-color: #e0e0e0;
+    background-color: var(--text-muted);
     border-radius: 4px;
     margin: 8px auto;
     animation: pulse 1.5s ease-in-out infinite;
