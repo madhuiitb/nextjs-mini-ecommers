@@ -82,7 +82,7 @@ const ProductList = ({ products, setProducts, selectedCategories,cartItemsCount,
   
     return (
         <div className={styles.grid}>
-            {filteredProducts.map((product) => (
+            {filteredProducts.map((product,i) => (
                 <Link href={`/product/${product.id}`} key={product.id}>
                 <div key={product.id} className={styles.card}>
                     <Image
@@ -91,6 +91,7 @@ const ProductList = ({ products, setProducts, selectedCategories,cartItemsCount,
                         width={200}
                         height={200}
                         className={styles.image}
+                        priority={i<4}
                     />
                     <h2>{product.title}</h2>
                     <p>Price: ${product.price}</p>

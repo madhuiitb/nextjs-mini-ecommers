@@ -42,12 +42,12 @@ const ProductDetails = ({ product })=> {
                 <button
                     className={styles.buttonIcon}
                     onClick={() => removeFromCart(product.id)}
-                >-</button>
+                >Remove </button>
                 <span>{count}</span>
                 <button
                     className={styles.buttonIcon}
                     onClick={() => addToCart(product)}
-                >+</button> 
+                >Add to cart</button>
             </div>
         </div>
     );
