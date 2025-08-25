@@ -1,0 +1,142 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 0.75rem;
+    position: relative;
+    z-index: 200;
+}
+
+.nav {
+    width: 100%;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navList li {
+    font-size: 16px;
+}
+
+.navList a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navList a:hover,
+.navList a:focus {
+    background-color: rebeccapurple;
+    color: #fff;
+    outline: none;
+}
+
+.navIcon {
+    font-size: 24px;
+}
+
+.navLabel {
+    display: block;
+}
+
+.searchBar {
+    width: 100%;
+    max-width: 100%;
+}
+
+.filterButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+/* Tablet styles (768px and up) */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+    }
+
+    .nav {
+        width: auto;
+    }
+
+    .navList {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .navList li {
+        font-size: 16px;
+    }
+
+    .navList a {
+        padding: 0.25rem 0.5rem;
+    }
+
+    .navIcon {
+        font-size: 20px;
+    }
+
+    .navLabel {
+        display: none;
+    }
+
+    .searchBar {
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .filterButtons {
+        justify-content: flex-end;
+        width: auto;
+        gap: 1rem;
+    }
+}
+
+/* Laptop styles (1024px and up) */
+@media (min-width: 1024px) {
+    .header {
+        padding: 1rem 2rem;
+    }
+
+    .searchBar {
+        max-width: 500px;
+    }
+
+    .filterButtons {
+        gap: 1.5rem;
+    }
+
+    .navList li {
+        font-size: 16px;
+    }
+
+    .navIcon {
+        font-size: 20px;
+    }
+
+    .navLabel {
+        display: none;
+    }
+}

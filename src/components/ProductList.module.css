@@ -1,0 +1,119 @@
+.grid{
+    display: grid;
+    gap:16px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+}
+.buttonIcon{
+    padding:8px 12px;
+    font-size: large;
+}
+.image{
+    display: block;
+    margin: 0 auto;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.2rem;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: red;
+    font-size: 1.2rem;
+}
+
+.retryButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.retryButton:hover {
+    background-color: #005bb5;
+}
+
+.skeletonCard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.skeletonImage {
+    width: 200px;
+    height: 200px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.skeletonTitle {
+    width: 80%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin: 10px auto;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.skeletonPrice {
+    width: 50%;
+    height: 16px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin: 8px auto;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.skeletonCategory {
+    width: 60%;
+    height: 16px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin: 8px auto;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

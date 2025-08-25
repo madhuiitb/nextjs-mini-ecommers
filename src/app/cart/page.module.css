@@ -1,0 +1,39 @@
+.grid{
+    display: grid;
+    gap:16px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 10vh;
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+}
+.buttonIcon{
+    padding:8px 12px;
+    font-size: large;
+}
+.image{
+    display: block;
+    margin: 0 auto;
+}
+
+.noCartItems{
+    font-size: 32PX;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
