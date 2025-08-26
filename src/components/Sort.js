@@ -11,7 +11,7 @@ const Sort = () => {
                 className={styles.select}
                 onChange={(e) => setSortOption(e.target.value)}
             >
-                <option value="">Default</option>
+                <option value="">Sorting</option>
                 <option value="priceLow">Price: Low to High</option>
                 <option value="priceHigh">Price: High to Low</option>
                 <option value="az">A - Z</option>
