@@ -50,7 +50,7 @@ A **responsive** mini e-commerce dashboard built with **Next.js (App Router)** a
    ```bash
    git clone https://github.com/madhuiitb/nextjs-mini-ecommers.git
    cd nextjs-mini-ecommers
-````
+   
 
 2. **Install dependencies**
 
